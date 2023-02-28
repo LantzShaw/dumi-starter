@@ -8,9 +8,12 @@
     "baseUrl": "./",
     "paths": {
       "@@/*": [".dumi/tmp/*"],
-      "litecase-ui": ["src"],
-      "litecase-ui/*": ["src/*", "*"]
-    }
+      "dumi-starter": ["packages"],
+      "dumi-starter/*": ["packages/*", "*"]
+    },
+    // NOTE: Cannot write file … because it would overwrite input file.
+    // 不设置为true, 会报错，参考文章: https://juejin.cn/post/6844904186887290893
+    "noEmit": true,
   },
-  "include": [".dumi/**/*", ".dumirc.ts", "src/**/*"]
+  "include": [".dumi/**/*", ".dumirc.ts", "packages/**/*"]
 }

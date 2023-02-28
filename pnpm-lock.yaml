@@ -1,36 +1,43 @@
 lockfileVersion: 5.4
 
-specifiers:
-  '@commitlint/cli': ^17.1.2
-  '@commitlint/config-conventional': ^17.1.0
-  '@umijs/lint': ^4.0.0
-  dumi: ^2.0.2
-  eslint: ^8.23.0
-  father: ^4.1.0
-  husky: ^8.0.1
-  lint-staged: ^13.0.3
-  prettier: ^2.7.1
-  prettier-plugin-organize-imports: ^3.0.0
-  prettier-plugin-packagejson: ^2.2.18
-  react: ^18.0.0
-  react-dom: ^18.0.0
-  stylelint: ^14.9.1
+importers:
 
-devDependencies:
-  '@commitlint/cli': 17.4.4
-  '@commitlint/config-conventional': 17.4.4
-  '@umijs/lint': 4.0.53_no76r3wguqz7n2ihpxiavq34aq
-  dumi: 2.1.14_u3samvbzvrksr3cjfq3oe55axi
-  eslint: 8.35.0
-  father: 4.1.5
-  husky: 8.0.3
-  lint-staged: 13.1.2
-  prettier: 2.8.4
-  prettier-plugin-organize-imports: 3.2.2_prettier@2.8.4
-  prettier-plugin-packagejson: 2.4.3_prettier@2.8.4
-  react: 18.2.0
-  react-dom: 18.2.0_react@18.2.0
-  stylelint: 14.16.1
+  .:
+    specifiers:
+      '@commitlint/cli': ^17.1.2
+      '@commitlint/config-conventional': ^17.1.0
+      '@types/react': ^18.0.28
+      '@umijs/lint': ^4.0.0
+      classnames: ^2.3.2
+      dumi: ^2.0.2
+      eslint: ^8.23.0
+      father: ^4.1.0
+      husky: ^8.0.1
+      lint-staged: ^13.0.3
+      prettier: ^2.7.1
+      prettier-plugin-organize-imports: ^3.0.0
+      prettier-plugin-packagejson: ^2.2.18
+      react: ^18.0.0
+      react-dom: ^18.0.0
+      stylelint: ^14.9.1
+    dependencies:
+      classnames: 2.3.2
+    devDependencies:
+      '@commitlint/cli': 17.4.4
+      '@commitlint/config-conventional': 17.4.4
+      '@types/react': 18.0.28
+      '@umijs/lint': 4.0.53_no76r3wguqz7n2ihpxiavq34aq
+      dumi: 2.1.14_o5v6xf5bcvnggleqiqwqpj4iia
+      eslint: 8.35.0
+      father: 4.1.5
+      husky: 8.0.3
+      lint-staged: 13.1.2
+      prettier: 2.8.4
+      prettier-plugin-organize-imports: 3.2.2_prettier@2.8.4
+      prettier-plugin-packagejson: 2.4.3_prettier@2.8.4
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      stylelint: 14.16.1
 
 packages:
 
@@ -1303,21 +1310,21 @@ packages:
       '@floating-ui/core': 0.6.2
     dev: true
 
-  /@floating-ui/react-dom-interactions/0.3.1_ef5jwxihqo6n7gxfmzogljlgcm:
+  /@floating-ui/react-dom-interactions/0.3.1_geqtkvvluj2en6xdskblg4z7uq:
     resolution: {integrity: sha512-tP2KEh7EHJr5hokSBHcPGojb+AorDNUf0NYfZGg/M+FsMvCOOsSEeEF0O1NDfETIzDnpbHnCs0DuvCFhSMSStg==}
     deprecated: Package renamed to @floating-ui/react
     dependencies:
-      '@floating-ui/react-dom': 0.6.3_ef5jwxihqo6n7gxfmzogljlgcm
-      aria-hidden: 1.2.2_react@18.1.0
+      '@floating-ui/react-dom': 0.6.3_geqtkvvluj2en6xdskblg4z7uq
+      aria-hidden: 1.2.2_obbe7ycx7dfgllab6ij5426xhu
       point-in-polygon: 1.1.0
-      use-isomorphic-layout-effect: 1.1.2_react@18.1.0
+      use-isomorphic-layout-effect: 1.1.2_obbe7ycx7dfgllab6ij5426xhu
     transitivePeerDependencies:
       - '@types/react'
       - react
       - react-dom
     dev: true
 
-  /@floating-ui/react-dom/0.6.3_ef5jwxihqo6n7gxfmzogljlgcm:
+  /@floating-ui/react-dom/0.6.3_geqtkvvluj2en6xdskblg4z7uq:
     resolution: {integrity: sha512-hC+pS5D6AgS2wWjbmSQ6UR6Kpy+drvWGJIri6e1EDGADTPsCaa4KzCgmCczHrQeInx9tqs81EyDmbKJYY2swKg==}
     peerDependencies:
       react: '>=16.8.0'
@@ -1326,7 +1333,7 @@ packages:
       '@floating-ui/dom': 0.4.5
       react: 18.1.0
       react-dom: 18.1.0_react@18.1.0
-      use-isomorphic-layout-effect: 1.1.2_react@18.1.0
+      use-isomorphic-layout-effect: 1.1.2_obbe7ycx7dfgllab6ij5426xhu
     transitivePeerDependencies:
       - '@types/react'
     dev: true
@@ -2639,7 +2646,7 @@ packages:
       tsx: 3.12.3
     dev: true
 
-  /@umijs/preset-umi/4.0.53_sass@1.58.3:
+  /@umijs/preset-umi/4.0.53_2daar45n7b6npbxa7bcn2xw75e:
     resolution: {integrity: sha512-NPEysn+hceby45cYD6g4mMnNrtDhgLZBte4U3zxKBlsOFash/sQkjMm1cpLmYGfT2l22X7mn5fMbNdlOm88j0Q==}
     dependencies:
       '@iconify/utils': 2.1.1
@@ -2658,7 +2665,7 @@ packages:
       '@umijs/server': 4.0.53
       '@umijs/utils': 4.0.53
       babel-plugin-dynamic-import-node: 2.3.3
-      click-to-react-component: 1.0.8_ef5jwxihqo6n7gxfmzogljlgcm
+      click-to-react-component: 1.0.8_geqtkvvluj2en6xdskblg4z7uq
       core-js: 3.27.1
       current-script-polyfill: 1.0.0
       enhanced-resolve: 5.9.3
@@ -2952,7 +2959,7 @@ packages:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
     dev: true
 
-  /aria-hidden/1.2.2_react@18.1.0:
+  /aria-hidden/1.2.2_obbe7ycx7dfgllab6ij5426xhu:
     resolution: {integrity: sha512-6y/ogyDTk/7YAe91T3E2PR1ALVKyM2QbTio5HwM+N1Q6CMlCKhvClyIjkckBswa0f2xJhjsfzIGa1yVSe1UMVA==}
     engines: {node: '>=10'}
     peerDependencies:
@@ -2962,6 +2969,7 @@ packages:
       '@types/react':
         optional: true
     dependencies:
+      '@types/react': 18.0.28
       react: 18.1.0
       tslib: 2.5.0
     dev: true
@@ -3553,7 +3561,6 @@ packages:
 
   /classnames/2.3.2:
     resolution: {integrity: sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==}
-    dev: true
 
   /clean-css/5.3.2:
     resolution: {integrity: sha512-JVJbM+f3d3Q704rF4bqQ5UUyTtuJ0JRKNbTKVEeujCCBoMdkEi+V+e8oktO9qGQNSvHrFTM6JZRXrUvGR1czww==}
@@ -3611,12 +3618,12 @@ packages:
     resolution: {integrity: sha512-GRMWDxpOB6Dgk2E5Uo+3eEBvtOOlimMmpbFiKuLFnQzYDavtLFY3K5ona41jgN/WdRZtG7utuVSVTL4HbZHGkw==}
     dev: true
 
-  /click-to-react-component/1.0.8_ef5jwxihqo6n7gxfmzogljlgcm:
+  /click-to-react-component/1.0.8_geqtkvvluj2en6xdskblg4z7uq:
     resolution: {integrity: sha512-YBNYOp00udy+NBEnUmM/3Df0Yco1iHNQ8k0ltlJVcDYK9AuYt14xPoJicBh/BokLqbzkci1p+pbdY5r4JXZC4g==}
     peerDependencies:
       react: '>=16.8.0'
     dependencies:
-      '@floating-ui/react-dom-interactions': 0.3.1_ef5jwxihqo6n7gxfmzogljlgcm
+      '@floating-ui/react-dom-interactions': 0.3.1_geqtkvvluj2en6xdskblg4z7uq
       htm: 3.1.1
       react: 18.1.0
       react-merge-refs: 1.1.0
@@ -4372,7 +4379,7 @@ packages:
     resolution: {integrity: sha512-a/Y5lf0G6gwsEQ9hop/n03CcjmHsGBk384Cz/AEX6mRYrfSpUx/lQvP9HLoXkCzScl9PL1sSmLPnMkgaXDCZLA==}
     dev: true
 
-  /dumi/2.1.14_u3samvbzvrksr3cjfq3oe55axi:
+  /dumi/2.1.14_o5v6xf5bcvnggleqiqwqpj4iia:
     resolution: {integrity: sha512-j6Wsk15pdZF1ZHbvuBlDXMv8yCVdWhQHC8l4a9O/rphBYMHUPagZIcHiSXpzW+4oKYaXG6DErK9RkcvyuGgXHQ==}
     hasBin: true
     peerDependencies:
@@ -4429,7 +4436,7 @@ packages:
       remark-rehype: 10.1.0
       sass: 1.58.3
       sitemap: 7.1.1
-      umi: 4.0.53_hcab73rnanuj5w6mgvqoxzj2qi
+      umi: 4.0.53_ljnmiinzg5vzskqsvu6gsqnvpm
       unified: 10.1.2
       unist-util-visit: 4.1.2
       unist-util-visit-parents: 5.1.3
@@ -11345,7 +11352,7 @@ packages:
     hasBin: true
     dev: true
 
-  /umi/4.0.53_hcab73rnanuj5w6mgvqoxzj2qi:
+  /umi/4.0.53_ljnmiinzg5vzskqsvu6gsqnvpm:
     resolution: {integrity: sha512-geHoXBTJvkkzHmSWzPlthH8NAFanJQ6fkn9hKUQjNUjve3dlvqcE7Mfk81zWMhh8ERWA7Bjy0SUrI2LZuWCjAw==}
     engines: {node: '>=14'}
     hasBin: true
@@ -11355,7 +11362,7 @@ packages:
       '@umijs/bundler-webpack': 4.0.53
       '@umijs/core': 4.0.53
       '@umijs/lint': 4.0.53_no76r3wguqz7n2ihpxiavq34aq
-      '@umijs/preset-umi': 4.0.53_sass@1.58.3
+      '@umijs/preset-umi': 4.0.53_2daar45n7b6npbxa7bcn2xw75e
       '@umijs/renderer-react': 4.0.53_biqbaboplfbrettd7655fr4n2y
       '@umijs/server': 4.0.53
       '@umijs/test': 4.0.53
@@ -11549,7 +11556,7 @@ packages:
       querystring: 0.2.0
     dev: true
 
-  /use-isomorphic-layout-effect/1.1.2_react@18.1.0:
+  /use-isomorphic-layout-effect/1.1.2_obbe7ycx7dfgllab6ij5426xhu:
     resolution: {integrity: sha512-49L8yCO3iGT/ZF9QttjwLF/ZD9Iwto5LnH5LmEdk/6cFmXddqi2ulF0edxTwjj+7mqvpVVGQWvbXZdn32wRSHA==}
     peerDependencies:
       '@types/react': '*'
@@ -11558,6 +11565,7 @@ packages:
       '@types/react':
         optional: true
     dependencies:
+      '@types/react': 18.0.28
       react: 18.1.0
     dev: true
 

@@ -1,0 +1,47 @@
+@import '../../../styles/base.less';
+
+@default-background-color: #fff;
+@primary-background-color: #6020df;
+
+:root {
+  --lc-button-default-background-color: @default-background-color;
+  --lc-button-primary-background-color: @primary-background-color;
+}
+
+.@{lc-prefix}-button {
+  border: none;
+  cursor: pointer;
+
+  &--default {
+    background-color: var(--lc-button-default-background-color);
+  }
+
+  &--primary {
+    background-color: var(--lc-button-primary-background-color);
+    color: #fff;
+  }
+
+  &--danger {
+  }
+
+  &--small {
+    padding: 4px;
+  }
+
+  &--medium {
+    padding: 8px;
+  }
+
+  &--large {
+    padding: 12px;
+  }
+
+  &--rounded {
+    border-radius: 4px;
+  }
+
+  &--disabled {
+    background-color: #b894ff;
+    cursor: not-allowed;
+  }
+}
