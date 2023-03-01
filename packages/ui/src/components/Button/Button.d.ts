@@ -1,4 +1,4 @@
-import type { ReactNode, ReactNodeClass, ReactStyle } from 'react';
+import type { ReactNode, ReactNodeClass } from 'react';
 
 type ButtonType = 'default' | 'primary' | 'secondary' | 'link' | 'text';
 type ButtonSize = 'mini' | 'small' | 'medium' | 'large';
@@ -20,7 +20,7 @@ type BaseButtonProps = {
   onClick?: MouseEventHandler<HTMLButtonElement>;
 
   /** inline style */
-  style?: ReactStyle;
+  style?: CSSProperties;
 
   /** class name */
   className?: ReactNodeClass;

@@ -20,7 +20,7 @@ const Button: FC<PrimaryButtonProps> = (props): ReactElement => {
 
   const classes = classnames(
     [bem([type, size, { disabled, rounded }])],
-    className?.split(' '),
+    className,
   );
 
   return (

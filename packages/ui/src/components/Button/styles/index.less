@@ -2,10 +2,23 @@
 
 @default-background-color: #fff;
 @primary-background-color: #6020df;
+@secondary-background-color: #5e32b6;
+@info-background-color: #09a0f7;
+@success-background-color: #10c853;
+@warning-background-color: #e8c215;
+@danger-background-color: #db1539;
+
+// default primary secondary success warning info danger dashed link text
 
 :root {
   --lc-button-default-background-color: @default-background-color;
   --lc-button-primary-background-color: @primary-background-color;
+  --lc-button-secondary-background-color: @secondary-background-color;
+  --lc-button-info-background-color: @info-background-color;
+  --lc-button-success-background-color: @success-background-color;
+  --lc-button-warning-background-color: @warning-background-color;
+  --lc-button-danger-background-color: @danger-background-color;
+  --lc-button-disabled-opacity: 0.4;
 }
 
 .@{lc-prefix}-button {
@@ -21,7 +34,29 @@
     color: #fff;
   }
 
+  &--secondary {
+    background-color: var(--lc-button-secondary-background-color);
+    color: #fff;
+  }
+
+  &--info {
+    background-color: var(--lc-button-info-background-color);
+    color: #fff;
+  }
+
+  &--success {
+    background-color: var(--lc-button-success-background-color);
+    color: #fff;
+  }
+
+  &--warning {
+    background-color: var(--lc-button-warning-background-color);
+    color: #fff;
+  }
+
   &--danger {
+    background-color: var(--lc-button-danger-background-color);
+    color: #fff;
   }
 
   &--small {
@@ -41,7 +76,7 @@
   }
 
   &--disabled {
-    background-color: #b894ff;
     cursor: not-allowed;
+    opacity: var(--lc-button-disabled-opacity);
   }
 }
