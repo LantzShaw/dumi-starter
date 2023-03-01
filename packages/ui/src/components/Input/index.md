@@ -1,6 +1,6 @@
 # Input
 
-This is input component
+This is an example of `Iutton` component.
 
 ### Demo
 
