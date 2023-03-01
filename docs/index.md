@@ -4,19 +4,17 @@ hero:
   description: A react library developed with dumi
   actions:
     - text: get started
-      link: /
+      link: /components
     - text: preview
       link: /
 features:
-  - title: Hello
+  - title: Fast and simple
     emoji: 💎
-    description: Put hello description here
-  - title: World
+    description: litecase ui is fast and simple to use
+  - title: small size
     emoji: 🌈
-    description: Put world description here
-  - title: '!'
+    description: Just xx kb
+  - title: import in need
     emoji: 🚀
     description: Put ! description here
 ---
-
-litecase-ui
