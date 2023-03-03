@@ -10,6 +10,7 @@ export default defineConfig({
   // NOTE: 设置此项可以在编写.md demo时，可以直接使用最终发布的npm包模式，e.g. import { Button } 'litecase-ui'
   alias: {
     'litecase-ui': path.resolve(__dirname, './packages'),
+    '@litecase-ui/icons': path.resolve(__dirname, './packages/icons'),
   },
   resolve: {
     // NOTE: 有时候配置这个可能是.md文件中import会报错 例如: import { Foo } from 'litecase-ui'
