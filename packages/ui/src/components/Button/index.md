@@ -27,6 +27,9 @@ export default () => {
     <>
       <Flex justify="start" align="center" direction="row" gutter={[6, 12]}>
         <Flex.Item>
+          <Button type="default">Default</Button>
+        </Flex.Item>
+        <Flex.Item>
           <Button type="primary">Primary</Button>
         </Flex.Item>
 
@@ -52,6 +55,11 @@ export default () => {
       </Flex>
 
       <Flex justify="start" align="center" direction="row" gutter={[6, 12]}>
+        <Flex.Item>
+          <Button type="default" rounded>
+            Default
+          </Button>
+        </Flex.Item>
         <Flex.Item>
           <Button type="primary" rounded>
             Primary
@@ -86,6 +94,11 @@ export default () => {
 
       <Flex justify="start" align="center" direction="row" gutter={[6, 12]}>
         <Flex.Item>
+          <Button type="default" rounded disabled>
+            Default
+          </Button>
+        </Flex.Item>
+        <Flex.Item>
           <Button type="primary" rounded disabled>
             Primary
           </Button>
@@ -118,6 +131,11 @@ export default () => {
       </Flex>
 
       <Flex justify="start" align="center" direction="row" gutter={[6, 12]}>
+        <Flex.Item>
+          <Button type="default" disabled>
+            Default
+          </Button>
+        </Flex.Item>
         <Flex.Item>
           <Button type="primary" disabled>
             Primary
@@ -164,6 +182,11 @@ export default () => {
     <>
       <Flex justify="start" align="center" direction="row" gutter={[6, 12]}>
         <Flex.Item>
+          <Button type="default" size="mini">
+            Default
+          </Button>
+        </Flex.Item>
+        <Flex.Item>
           <Button type="primary" size="mini">
             Primary
           </Button>
@@ -196,6 +219,11 @@ export default () => {
       </Flex>
 
       <Flex justify="start" align="center" direction="row" gutter={[6, 12]}>
+        <Flex.Item>
+          <Button type="default" size="small">
+            Default
+          </Button>
+        </Flex.Item>
         <Flex.Item>
           <Button type="primary" size="small">
             Primary
@@ -230,6 +258,11 @@ export default () => {
 
       <Flex justify="start" align="center" direction="row" gutter={[6, 12]}>
         <Flex.Item>
+          <Button type="default" size="medium">
+            Default
+          </Button>
+        </Flex.Item>
+        <Flex.Item>
           <Button type="primary" size="medium">
             Primary
           </Button>
@@ -262,6 +295,11 @@ export default () => {
       </Flex>
 
       <Flex justify="start" align="center" direction="row" gutter={[6, 12]}>
+        <Flex.Item>
+          <Button type="default" size="large">
+            Default
+          </Button>
+        </Flex.Item>
         <Flex.Item>
           <Button type="primary" size="large">
             Primary

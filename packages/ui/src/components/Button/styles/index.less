@@ -1,12 +1,12 @@
 @import '../../../styles/base.less';
 
 @default-background-color: #fff;
-@primary-background-color: #6020df;
-@secondary-background-color: #5e32b6;
-@info-background-color: #09a0f7;
+@primary-background-color: #601ce8;
+@secondary-background-color: #6c37d6;
+@info-background-color: #0960f7;
 @success-background-color: #10c853;
-@warning-background-color: #e8c215;
-@danger-background-color: #db1539;
+@warning-background-color: #f1cb22;
+@danger-background-color: #e7153c;
 
 // default primary secondary success warning info danger dashed link text
 
@@ -24,8 +24,11 @@
 .@{lc-prefix}-button {
   border: none;
   cursor: pointer;
+  box-sizing: border-box;
+  // padding: 4px 8px;
 
   &--default {
+    border: 1px solid #e0dddd;
     background-color: var(--lc-button-default-background-color);
   }
 
@@ -59,20 +62,25 @@
     color: #fff;
   }
 
-  &--small {
+  &--mini {
     padding: 4px;
+    font-size: 14px;
+  }
+
+  &--small {
+    padding: 4px 8px;
   }
 
   &--medium {
-    padding: 8px;
+    padding: 8px 12px;
   }
 
   &--large {
-    padding: 12px;
+    padding: 12px 16px;
   }
 
   &--rounded {
-    border-radius: 4px;
+    border-radius: 8px;
   }
 
   &--disabled {
