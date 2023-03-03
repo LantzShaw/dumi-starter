@@ -4,16 +4,20 @@ type Justify = 'start' | 'center' | 'end' | 'between' | 'around';
 
 type Align = 'start' | 'center' | 'end' | 'baseline' | 'stretch';
 
+type Wrap = 'nowrap' | 'wrap' | 'wrap-reverse';
+
 type SpaceProps = PropsWithChildren<
   {
     /** the gap between the elements */
     gap: number[] | string[];
 
-    direction: Direction;
+    direction?: Direction;
 
-    justify: Justify;
+    justify?: Justify;
 
-    align: Align;
+    align?: Align;
+
+    wrap?: Wrap;
 
     /** inline style */
     style?: CSSProperties;

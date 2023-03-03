@@ -35,3 +35,4 @@ export default () => {
 |  justify  | flex justify content |  `start` \| `center` \| `end` \| `around` \| `between`  |   `start`    |
 |   align   |   flex align items   | `start` \| `center` \| `end` \| `baseline` \| `stretch` |   `start`    |
 |    gap    |       flex gap       |                   `[number, number]`                    |   `[0, 0]`   |
+|   wrap    |      flex wrap       |          `wrap` \| `nowrap` \| `wrap-reverse`           |    `wrap`    |

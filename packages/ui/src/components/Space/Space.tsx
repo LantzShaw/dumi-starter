@@ -14,6 +14,7 @@ const Space: FC<SpaceProps> = (props): ReactElement => {
   const {
     gap = [0, 0],
     direction = 'horizontal',
+    wrap = 'wrap',
     justify,
     align,
     style,
@@ -34,6 +35,7 @@ const Space: FC<SpaceProps> = (props): ReactElement => {
     [
       bem([
         direction,
+        wrap,
         justify ? `justify-${justify}` : false,
         align ? `align-${align}` : false,
       ]),
