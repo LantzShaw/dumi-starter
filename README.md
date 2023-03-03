@@ -3,38 +3,44 @@
 [![NPM version](https://img.shields.io/npm/v/litecase-ui.svg?style=flat)](https://npmjs.org/package/litecase-ui)
 [![NPM downloads](http://img.shields.io/npm/dm/litecase-ui.svg?style=flat)](https://npmjs.org/package/litecase-ui)
 
-A react library developed with dumi
+A beautiful react ui component.
 
 ## Usage
 
-TODO
+```sh
+$ pnpm add litecase-ui
 
-## Options
+# or
 
-TODO
+$ npm i litecase-ui
 
-## Development
+```
 
-```bash
-# install dependencies
-$ pnpm install
+For icons, maybe you can import `@litecase-ui/icons` library, like this:
 
-# develop library by docs demo
-$ pnpm start
+```sh
+$ pnpm add @litecase-ui/icons
 
-# build library source code
-$ pnpm run build
+# or
 
-# build library source code in watch mode
-$ pnpm run build:watch
+$ npm i @litecase-ui/icons
 
-# build docs
-$ pnpm run docs:build
+```
 
-# check your project for potential problems
-$ pnpm run doctor
+## Quick Start
+
+```tsx
+import { Button } from 'litecase-ui';
+
+export default () => {
+  return (
+    <>
+      <Button type="primary">Primary</Button>
+    </>
+  );
+};
 ```
 
 ## LICENSE
 
-MIT
+litecase-ui is [MIT licensed](./LICENSE).
