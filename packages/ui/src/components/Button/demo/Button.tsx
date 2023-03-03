@@ -1,15 +1,11 @@
 import React, { FC, ReactElement } from 'react';
 
-import { Button } from 'dumi-starter';
+// import { Button } from 'litecase-ui';
 
 export type Props = {};
 
 const Demo: FC<Props> = (): ReactElement => {
-  return (
-    <div>
-      <Button />
-    </div>
-  );
+  return <div>dasdddddddddddd</div>;
 };
 
 export default Demo;

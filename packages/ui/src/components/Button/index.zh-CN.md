@@ -1,17 +1,16 @@
-# Button
+# Button 按钮
 
 This is an example of `Button` component.
 
-### Usage
+### 引入
 
 ```jsx | pure
 import { Button } from 'litecase-ui';
 ```
 
-<!-- <code src="./demo/Button.tsx" inline="true" description="demo 描述">demo 标题</code> -->
+### 按钮类型
 
-### Type
-
+<!-- <code src="./demo/Button.tsx" description="demo 描述">demo 标题</code> -->
 <!--
 ```tsx |  pure
 import { Button } from 'litecase-ui';
@@ -154,7 +153,7 @@ export default () => {
 };
 ```
 
-### Size
+### 按钮尺寸
 
 ```tsx
 import { Button, Flex } from 'litecase-ui';
