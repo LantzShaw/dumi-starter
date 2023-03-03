@@ -12,23 +12,25 @@ type Align = 'start' | 'center' | 'end' | 'baseline' | 'stretch';
 
 type Wrap = 'nowrap' | 'wrap' | 'wrap-reverse';
 
-type FlexProps = PropsWithChildren<{
-  direction?: Direction;
+type FlexProps = PropsWithChildren<
+  {
+    direction?: Direction;
 
-  justify?: Justify;
+    justify?: Justify;
 
-  align?: Align;
+    align?: Align;
 
-  gutter?: number | [number, number];
+    gutter?: number | [number, number];
 
-  wrap?: Wrap;
+    wrap?: Wrap;
 
-  /** inline style */
-  style?: CSSProperties;
+    /** inline style */
+    style?: CSSProperties;
 
-  /** class name */
-  className?: ReactNodeClass;
-}>;
+    /** class name */
+    className?: ReactNodeClass;
+  } & Record<string, any>
+>;
 
 type FlexItemProps = PropsWithChildren<{
   /** inline style */
