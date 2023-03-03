@@ -72,7 +72,7 @@ export default () => {
 
   return (
     <>
-      <Space gap={[12, 12]} style={{ flexWrap: 'wrap' }}>
+      <Space gap={[12, 12]} style={{ paddingBottom: '16px' }}>
         {baseIocns.map((item, index) => {
           return (
             <Fragment key={index}>
@@ -115,8 +115,32 @@ export default () => {
         <PlusCircle />
         <PlusCircleFill />
         <PlusCircleDotted />
+        <PlusCircleDotted />
       </Space>
     </>
+  );
+};
+```
+
+### Rotate Icon
+
+```tsx
+/**
+ * inline: true
+ */
+import './styles/index.less';
+
+import { ArrowRepeat, Gear } from '@litecase-ui/icons';
+import { Space } from 'litecase-ui';
+
+export default () => {
+  const styles = { height: '80px' };
+
+  return (
+    <Space className={'icon-container'} gap={[0, 12]}>
+      <ArrowRepeat spin={true} />
+      <Gear spin={true} />
+    </Space>
   );
 };
 ```
