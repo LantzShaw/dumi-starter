@@ -1,4 +1,6 @@
-import React, { type FC, type ReactElement } from 'react';
+import React, { useRef, type FC, type ReactElement } from 'react';
+
+import { CSSTransition } from 'react-transition-group';
 
 import { type NotificationProps } from './Notification.d';
 
@@ -22,6 +24,8 @@ const Notification: FC<NotificationProps> = (props): ReactElement => {
     onClose,
   } = props;
 
+  const notificationRef = useRef<HTMLDivElement>(null);
+
   const styles = {
     display: visiable ? 'block' : 'none',
     ...style,
@@ -34,9 +38,23 @@ const Notification: FC<NotificationProps> = (props): ReactElement => {
   };
 
   return (
-    <div className={`${bem()}`} style={styles} onClick={clickHandler}>
-      <div className={classes}>{children}</div>
-    </div>
+    <>
+      <CSSTransition
+        classNames={`${bem(['animation'])}`}
+        in={visiable}
+        timeout={300}
+        nodeRef={notificationRef}
+      >
+        <div
+          ref={notificationRef}
+          className={`${bem()}`}
+          style={styles}
+          onClick={clickHandler}
+        >
+          <div className={classes}>{children}</div>
+        </div>
+      </CSSTransition>
+    </>
   );
 };
 

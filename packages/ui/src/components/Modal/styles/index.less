@@ -11,6 +11,23 @@
     background: rgba(0, 0, 0, 0.4);
   }
 
+  &--animation {
+    &-enter {
+      opacity: 0;
+      transition: opacity 200ms;
+    }
+
+    &-enter-active {
+      opacity: 1;
+      transition: opacity 200ms;
+    }
+
+    &-enter-exit-active {
+      opacity: 0;
+      transition: opacity 200ms;
+    }
+  }
+
   &__container {
     background-color: #fff;
     height: 300px;
