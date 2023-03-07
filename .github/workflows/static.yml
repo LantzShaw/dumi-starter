@@ -39,6 +39,14 @@ jobs:
         with:
           # Upload entire repository
           path: '.'
+      # 打包代码
+      - name: Build Project
+        run: |
+          npm install
+          npm run build
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs-dist
