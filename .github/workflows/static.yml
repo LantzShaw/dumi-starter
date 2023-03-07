@@ -45,4 +45,4 @@ jobs:
           # github_token: ${{ secrets.DEPLOY_TOKEN }}
           deploy_key: ${{ secrets.DEPLOY_PRIVATE_KEY }}
           publish_dir: ./docs-dist
-          # allow_empty_commit: true
+          allow_empty_commit: true
