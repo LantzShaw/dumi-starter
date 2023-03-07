@@ -32,14 +32,8 @@ jobs:
         uses: actions/checkout@v3
       - name: Setup Pages
         uses: actions/configure-pages@v3
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
       - name: Setup Node.js environment
         uses: actions/setup-node@v3.6.0
-        with:
-          # Upload entire repository
-          path: '.'
-      # 打包代码
       - name: Build Project
         run: |
           npm install
