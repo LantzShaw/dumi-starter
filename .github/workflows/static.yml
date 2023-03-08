@@ -4,7 +4,7 @@ name: Deploy static content to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ['master', 'gh-pages']
+    branches: ['master']
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -39,12 +39,18 @@ jobs:
         run: |
           npm install
           npm run docs:build
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: peaceiris/actions-gh-pages@v3
+      # - name: Deploy to GitHub Pages
+      #   id: deployment
+      #   uses: peaceiris/actions-gh-pages@v3
+      #   with:
+      #     github_token: ${{ secrets.DEPLOY_TOKEN }}
+      #     deploy_key: ${{ secrets.DEPLOY_PRIVATE_KEY }}
+      #     publish_dir: ./docs-dist
+      #     publish_branch: master # default: gh-pages
+      #     allow_empty_commit: true
+       # 部署到github
+      - name: Deploy to Github Pages
+        uses: JamesIves/github-pages-deploy-action@4.0.0
         with:
-          github_token: ${{ secrets.DEPLOY_TOKEN }}
-          deploy_key: ${{ secrets.DEPLOY_PRIVATE_KEY }}
-          publish_dir: ./docs-dist
-          publish_branch: master # default: gh-pages
-          allow_empty_commit: true
+          branch: master # 打包的内容放到build分支下
+          folder: ./docs-dist # 你打包后存放的文件
