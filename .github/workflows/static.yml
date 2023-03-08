@@ -52,5 +52,5 @@ jobs:
       - name: Deploy to Github Pages
         uses: JamesIves/github-pages-deploy-action@4.0.0
         with:
-          branch: master # 打包的内容放到build分支下
+          branch: gh-pages # 打包的内容放到build分支下
           folder: ./docs-dist # 你打包后存放的文件
