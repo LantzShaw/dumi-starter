@@ -1,7 +1,11 @@
 import { defineConfig } from 'dumi';
 import path from 'path';
 
+const repo = 'dumi-starter';
+
 export default defineConfig({
+  base: process.env.NODE_ENV === 'production' ? `/${repo}/` : '/',
+  publicPath: process.env.NODE_ENV === 'production' ? `/${repo}/` : '/',
   outputPath: 'docs-dist',
   locales: [
     { id: 'en-US', name: 'English' },
