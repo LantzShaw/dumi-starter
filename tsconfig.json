@@ -10,10 +10,17 @@
       "@@/*": [".dumi/tmp/*"],
       "litecase-ui": ["packages"],
       "litecase-ui/*": ["packages/*", "*"]
-    },
+    }
     // NOTE: Cannot write file … because it would overwrite input file.
     // 不设置为true, 会报错，参考文章: https://juejin.cn/post/6844904186887290893
-    "noEmit": true,
+    // "noEmit": false,
+    // "typeRoots": ["./typpings"]
   },
-  "include": [".dumi/**/*", ".dumirc.ts", "packages/**/*"]
+  "include": [".dumi/**/*", ".dumirc.ts"]
+  // "include": [".dumi/**/*", ".dumirc.ts", "./package/**/*"], // ./package/**/* 会Cannot write file … because it would overwrite input file.
+  //   "exclude": [
+  //     "./plugins/**/*",
+  //     "./typings/**/*",
+  //     "./packages/**/*",
+  // ]
 }
