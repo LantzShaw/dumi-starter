@@ -19,7 +19,6 @@
   "include": [".dumi/**/*", ".dumirc.ts"]
   // "include": [".dumi/**/*", ".dumirc.ts", "./package/**/*"], // ./package/**/* 会Cannot write file … because it would overwrite input file.
   //   "exclude": [
-  //     "./plugins/**/*",
   //     "./typings/**/*",
   //     "./packages/**/*",
   // ]
