@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdumi_starter=self.webpackChunkdumi_starter||[]).push([[935],{2511:function(n,t,_){_.r(t);var m=_(71100),s=_(35532),i=_(80543),a=_(50506),o=_(4046),E=_(67915),u=_(71280),l=_(67294),e=_(85893);function d(){var r=(0,u.useRouteMeta)(),M=r.texts;return(0,e.jsx)(u.DumiPage,{children:(0,e.jsx)(e.Fragment,{})})}t.default=d}}]);
