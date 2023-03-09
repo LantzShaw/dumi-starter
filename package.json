@@ -1,7 +1,8 @@
 {
-  "name": "dumi-starter",
+  "name": "litecase-ui",
   "version": "0.0.1-beta.0",
-  "description": "A react library developed with dumi",
+  "description": "A beautiful react component library.",
+  "homepage": "https://lantzshaw.github.io/litecase-ui/",
   "license": "MIT",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",

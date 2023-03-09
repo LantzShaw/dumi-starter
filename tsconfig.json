@@ -8,9 +8,7 @@
     "baseUrl": "./",
     "paths": {
       "@@/*": [".dumi/tmp/*"],
-      "dumi-starter": ["packages"],
       "litecase-ui": ["packages"],
-      "dumi-starter/*": ["packages/*", "*"],
       "litecase-ui/*": ["packages/*", "*"]
     },
     // NOTE: Cannot write file … because it would overwrite input file.

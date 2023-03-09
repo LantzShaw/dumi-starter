@@ -1,7 +1,7 @@
 import { defineConfig } from 'dumi';
 import path from 'path';
 
-const repo = 'dumi-starter';
+const repo = 'litecase-ui';
 
 export default defineConfig({
   base: process.env.NODE_ENV === 'production' ? `/${repo}/` : '/',
