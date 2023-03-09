@@ -1,5 +1,5 @@
 # Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+name: CI
 
 on:
   # Runs on pushes targeting the default branch
@@ -44,13 +44,12 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-#           deploy_key: ${{ secrets.DEPLOY_PRIVATE_KEY }}
+          #           deploy_key: ${{ secrets.DEPLOY_PRIVATE_KEY }}
           publish_dir: ./docs-dist
           publish_branch: gh-pages # default: gh-pages
           allow_empty_commit: true
-    
 #       - name: Deploy to Github Pages
 #         uses: JamesIves/github-pages-deploy-action@4.0.0
 #         with:
-#           branch: gh-pages # 打包的内容放到build分支下
+#           branch: gh-pages # 打包的内容放到gh-pages分支下
 #           folder: ./docs-dist # 你打包后存放的文件
