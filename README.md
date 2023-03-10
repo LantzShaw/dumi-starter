@@ -2,7 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/litecase-ui.svg?style=flat)](https://npmjs.org/package/litecase-ui)
 [![NPM downloads](http://img.shields.io/npm/dm/litecase-ui.svg?style=flat)](https://npmjs.org/package/litecase-ui)
-[![Deploy static content to Pages](https://github.com/LantzShaw/litecase-ui/actions/workflows/ci.yml/badge.svg)](https://github.com/LantzShaw/litecase-ui/actions/workflows/static.yml)
+[![Deploy static content to Pages](https://github.com/LantzShaw/litecase-ui/actions/workflows/ci.yml/badge.svg)](https://github.com/LantzShaw/litecase-ui/actions/workflows/ci.yml)
 
 A beautiful react ui component.
 
