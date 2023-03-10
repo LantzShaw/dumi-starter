@@ -2,6 +2,13 @@
   "name": "litecase-ui",
   "version": "0.0.1-beta.0",
   "description": "A beautiful react component library.",
+  "keywords": [
+    "react",
+    "components",
+    "ui",
+    "library",
+    "litecase"
+  ],
   "homepage": "https://lantzshaw.github.io/litecase-ui",
   "bugs": {
     "url": "https://github.com/LantzShaw/litecase-ui/issues"
