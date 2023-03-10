@@ -18,10 +18,14 @@
     "url": "https://github.com/LantzShaw/litecase-ui.git"
   },
   "license": "MIT",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "lib/index.js",
+  "unpkg": "dist/litecase-ui.min.js",
+  "module": "es/index.js",
+  "typings": "es/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "es",
+    "lib"
   ],
   "scripts": {
     "build": "father build",
