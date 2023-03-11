@@ -4,7 +4,7 @@ import React, { useMemo, type FC, type ReactElement } from 'react';
 import { createNamespace } from '../../utils/create';
 import GridContext from './GridContext';
 
-import type { GridProps } from './Grid.d';
+import type { GridProps } from './PropsType';
 
 const [bem] = createNamespace('grid');
 

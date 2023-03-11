@@ -5,5 +5,5 @@ import GridItem from './GridItem';
 
 const Grid = Object.assign(_Grid, { Item: GridItem });
 
-export type { GridItemProps, GridProps } from './Grid.d';
+export type { GridItemProps, GridProps } from './PropsType';
 export { Grid };
