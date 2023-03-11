@@ -41,6 +41,9 @@
   "scripts": {
     "build": "father build",
     "build:watch": "father dev",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate",
+    "contributors:init": "all-contributors init",
     "dev": "dumi dev",
     "docs:build": "dumi build",
     "doctor": "father doctor",
@@ -84,6 +87,7 @@
     "@types/react": "^18.0.28",
     "@types/react-transition-group": "^4.4.5",
     "@umijs/lint": "^4.0.0",
+    "all-contributors-cli": "^6.24.0",
     "dumi": "^2.0.2",
     "eslint": "^8.23.0",
     "father": "^4.1.0",
