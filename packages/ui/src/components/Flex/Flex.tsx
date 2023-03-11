@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import React, { useMemo, type FC, type ReactElement } from 'react';
 
-import { FlexProps } from './Flex.d';
+import { FlexProps } from './PropsType';
 
 import FlexContext from './FlexContext';
 
