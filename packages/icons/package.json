@@ -1,6 +1,6 @@
 {
   "name": "@litecase-ui/icons",
-  "version": "0.0.0-beta.1",
+  "version": "0.0.0-beta.2",
   "description": "litecase-ui icons",
   "keywords": [
     "icons",
@@ -13,9 +13,10 @@
     "**/*.css",
     "**/*.less"
   ],
-  "main": "lib",
-  "unpkg": "dist/icons.min.js",
-  "module": "es",
+  "main": "./lib",
+  "unpkg": "./dist/icons.min.js",
+  "module": "./es",
+  "typings": "./es/index.d.ts",
   "files": [
     "dist",
     "es",
@@ -23,7 +24,16 @@
   ],
   "scripts": {
     "build": "father build",
+    "prepublishOnly": "father doctor && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "authors": [
     "Lantz <lantzshaw@163.com>"

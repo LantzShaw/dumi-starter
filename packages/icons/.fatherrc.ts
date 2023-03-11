@@ -2,13 +2,13 @@ import { defineConfig } from 'father';
 
 export default defineConfig({
   esm: {
-    output: './es',
+    output: 'es',
   },
   cjs: {
-    output: './lib',
+    output: 'lib',
   },
   umd: {
     entry: '.',
-    output: './dist',
+    output: 'dist',
   },
 });
