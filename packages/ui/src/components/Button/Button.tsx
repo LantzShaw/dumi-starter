@@ -5,7 +5,7 @@ import { createNamespace } from '../../utils/create';
 
 const [bem] = createNamespace('button');
 
-import type { PrimaryButtonProps } from './Button.d';
+import type { PrimaryButtonProps } from './PropsType';
 
 const Button: FC<PrimaryButtonProps> = (props): ReactElement => {
   const {
@@ -15,6 +15,7 @@ const Button: FC<PrimaryButtonProps> = (props): ReactElement => {
     disabled = false,
     className,
     children,
+    style,
     ...rest
   } = props;
 
@@ -25,7 +26,13 @@ const Button: FC<PrimaryButtonProps> = (props): ReactElement => {
 
   return (
     <>
-      <button disabled={disabled} className={classes} {...rest}>
+      <button
+        type="button"
+        disabled={disabled}
+        style={style}
+        className={classes}
+        {...rest}
+      >
         {children}
       </button>
     </>

@@ -1,13 +1,7 @@
-import type { ReactNode, ReactNodeClass } from 'react';
+import type { CSSProperties, MouseEvent, ReactNode } from 'react';
 
 type ButtonType = 'default' | 'primary' | 'secondary' | 'link' | 'text';
 type ButtonSize = 'mini' | 'small' | 'medium' | 'large';
-
-// type: default primary secondary success wraning info danger dashed link text
-
-// loading
-
-// disabled
 
 type BaseButtonProps = {
   /** button types */
@@ -17,13 +11,13 @@ type BaseButtonProps = {
   children?: ReactNode;
 
   /** button click event */
-  onClick?: MouseEventHandler<HTMLButtonElement>;
+  onClick?: (event: MouseEvent) => void;
 
   /** inline style */
   style?: CSSProperties;
 
   /** class name */
-  className?: ReactNodeClass;
+  className?: string;
 
   /** button size */
   size?: ButtonSize;
@@ -37,6 +31,6 @@ type BaseButtonProps = {
   // [propName: string]: any
 } & Record<string, any>;
 
-type PrimaryButtonProps = {} & BaseButtonProps;
+type PrimaryButtonProps = BaseButtonProps;
 
 export { BaseButtonProps, PrimaryButtonProps, ButtonSize, ButtonType };
