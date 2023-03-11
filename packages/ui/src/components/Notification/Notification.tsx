@@ -2,7 +2,7 @@ import React, { useRef, type FC, type ReactElement } from 'react';
 
 import { CSSTransition } from 'react-transition-group';
 
-import { type NotificationProps } from './Notification.d';
+import { type NotificationProps } from './PropsType';
 
 import classNames from 'classnames';
 import { createNamespace } from '../../utils/create';

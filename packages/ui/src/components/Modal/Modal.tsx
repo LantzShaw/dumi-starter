@@ -2,14 +2,14 @@ import React, { useRef, type FC, type ReactElement } from 'react';
 
 import { CSSTransition } from 'react-transition-group';
 
-import type { ModalProps } from './Modal.d';
+import type { ModalProps } from './PropsType';
 
 import { createNamespace } from '../../utils/create';
 
 const [bem] = createNamespace('modal');
 
 const Modal: FC<ModalProps> = (props): ReactElement => {
-  const { visiable = true, style, children, className, onClose } = props;
+  const { visiable = true, style, children, onClose } = props;
 
   const modalRef = useRef<HTMLDivElement>(null);
 

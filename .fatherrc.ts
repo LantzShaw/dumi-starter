@@ -2,15 +2,15 @@ import { defineConfig } from 'father';
 
 export default defineConfig({
   esm: {
-    input: 'packages/ui/src/components/',
+    input: 'packages/ui/src',
     output: 'es',
   },
   cjs: {
-    input: 'packages/ui/src/components/',
+    input: 'packages/ui/src',
     output: 'lib',
   },
   umd: {
-    entry: 'packages/index.tsx',
+    entry: 'packages/ui/src',
     output: 'dist',
   },
 });

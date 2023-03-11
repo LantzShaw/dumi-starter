@@ -8,7 +8,7 @@ import React, {
 
 import FlexContext from './FlexContext';
 
-import { FlexItemProps } from './Flex.d';
+import { FlexItemProps } from './PropsType';
 
 const FlexItem: FC<FlexItemProps> = (props): ReactElement => {
   const { style, className, children } = props;

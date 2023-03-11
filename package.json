@@ -1,6 +1,6 @@
 {
   "name": "litecase-ui",
-  "version": "0.0.1-beta.0",
+  "version": "0.0.1-beta.4",
   "description": "A beautiful react component library.",
   "keywords": [
     "react",
@@ -18,6 +18,17 @@
     "url": "https://github.com/LantzShaw/litecase-ui.git"
   },
   "license": "MIT",
+  "contributors": [
+    {
+      "name": "Lantz",
+      "email": "lantzshaw@163.com",
+      "url": "https://github.com/LantzShaw"
+    }
+  ],
+  "sideEffects": [
+    "**/*.css",
+    "**/*.less"
+  ],
   "main": "lib/index.js",
   "unpkg": "dist/litecase-ui.min.js",
   "module": "es/index.js",
@@ -57,6 +68,12 @@
       "prettier --parser=typescript --write"
     ]
   },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "Firefox ESR",
+    "not dead"
+  ],
   "dependencies": {
     "classnames": "^2.3.2",
     "react-transition-group": "^4.4.5"
@@ -84,7 +101,8 @@
     "react-dom": ">=16.9.0"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "authors": [
     "Lantz <lantzshaw@163.com>"

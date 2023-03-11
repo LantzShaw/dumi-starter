@@ -2,8 +2,8 @@ import classNames from 'classnames';
 import React, { useContext, type FC, type ReactElement } from 'react';
 import { createNamespace } from '../../utils/create';
 
-import { GridItemProps } from './Grid.d';
 import GridContext from './GridContext';
+import { GridItemProps } from './PropsType';
 
 import { GRID_COLUMN_COUNT } from '../../utils/constants';
 
