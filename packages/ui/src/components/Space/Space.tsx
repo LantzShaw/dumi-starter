@@ -1,6 +1,6 @@
 import React, { FC, Fragment, ReactElement } from 'react';
 
-import { SpaceProps } from './Space.d';
+import { SpaceProps } from './PropsType';
 
 import classNames from 'classnames';
 import { createNamespace } from '../../utils/create';
