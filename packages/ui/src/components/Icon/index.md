@@ -144,3 +144,9 @@ export default () => {
   );
 };
 ```
+
+### API
+
+| Props |   Description   |   Type    | Default |
+| :---: | :-------------: | :-------: | :-----: |
+| spin  | set rotate icon | `boolean` | `false` |
