@@ -1,7 +1,7 @@
 node_modules
-/dist
-/es
-/lib
+dist
+lib
+es
 /docs-dist
 .dumi/tmp
 .dumi/tmp-test
